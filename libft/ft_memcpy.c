@@ -6,7 +6,7 @@
 /*   By: ancuesta <ancuesta@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/17 13:38:50 by ancuesta          #+#    #+#             */
-/*   Updated: 2024/04/25 16:08:20 by ancuesta         ###   ########.fr       */
+/*   Updated: 2024/04/25 16:23:41 by ancuesta         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,9 +15,9 @@
 
 void	*ft_memcpy(void *dst, const void *src, size_t n)
 {
-	size_t	i;
 	unsigned char		*uchardst;
 	const unsigned char	*ucharsrc;
+	size_t				i;
 
 	if (!dst && !src)
 		return (0);
