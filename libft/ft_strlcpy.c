@@ -6,7 +6,7 @@
 /*   By: ancuesta <ancuesta@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/23 11:27:35 by ancuesta          #+#    #+#             */
-/*   Updated: 2024/04/23 16:26:15 by ancuesta         ###   ########.fr       */
+/*   Updated: 2024/04/25 16:07:54 by ancuesta         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,26 +14,25 @@
 #include <stdio.h>
 #include "libft.h"
 
-size_t ft_strlcpy (char *dst, const char *src, size_t dstsize)
+size_t	ft_strlcpy(char *dst, const char *src, size_t dstsize)
 {
-    if (dstsize == 0)
-        return ft_strlen(src);
+	size_t	src_len;
+	size_t	counter;
 
-    size_t src_len = 0;
-    while (src[src_len] != '\0')
-        src_len++;
-
-    size_t counter = 0;
-    while (counter < dstsize - 1 && src[counter] != '\0')
-    {
-        dst[counter] = src[counter];
-        counter++;
-    }
-    if (dstsize > 0)
-        dst[counter] = '\0';
-
-    return src_len;
-    
+	src_len = 0;
+	counter = 0;
+	if (dstsize == 0)
+		return (ft_strlen(src));
+	while (src[src_len] != '\0')
+		src_len++;
+	while (counter < dstsize - 1 && src[counter] != '\0')
+	{
+		dst[counter] = src[counter];
+		counter++;
+	}
+	if (dstsize > 0)
+		dst[counter] = '\0';
+	return (src_len);
 }
 
 /*int main()

@@ -6,7 +6,7 @@
 /*   By: ancuesta <ancuesta@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/09 13:28:52 by ancuesta          #+#    #+#             */
-/*   Updated: 2024/04/23 13:28:02 by ancuesta         ###   ########.fr       */
+/*   Updated: 2024/04/25 13:27:12 by ancuesta         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,14 +16,14 @@
 
 int	ft_strlen(const char *s)
 {
-	int index;
+	int	index;
+
 	index = 0;
-	while(s[index] != '\0')
+	while (s[index] != '\0')
 	{
 		index++;
 	}
-
-	return index;
+	return (index);
 }
 
 /*int main()

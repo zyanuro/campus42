@@ -6,31 +6,30 @@
 /*   By: ancuesta <ancuesta@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/17 13:38:50 by ancuesta          #+#    #+#             */
-/*   Updated: 2024/04/19 20:35:34 by ancuesta         ###   ########.fr       */
+/*   Updated: 2024/04/25 16:08:20 by ancuesta         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <string.h>
 #include <stdio.h>
 
-void    *ft_memcpy(void *dst, const void *src, size_t n)
+void	*ft_memcpy(void *dst, const void *src, size_t n)
 {
-   size_t              i;
-   unsigned char       *uchardst;
-   const unsigned char *ucharsrc;
+	size_t	i;
+	unsigned char		*uchardst;
+	const unsigned char	*ucharsrc;
 
-   if (!dst && !src)
-       return (0);
-       
-   i = 0;
-   uchardst = (unsigned char *) dst;
-   ucharsrc = (const unsigned char *) src;
-   while (i < n)
-   {
-       uchardst[i] = ucharsrc[i];
-       i++;
-   }
-   return (dst);
+	if (!dst && !src)
+		return (0);
+	i = 0;
+	uchardst = (unsigned char *) dst;
+	ucharsrc = (const unsigned char *) src;
+	while (i < n)
+	{
+		uchardst[i] = ucharsrc[i];
+		i++;
+	}
+	return (dst);
 }
 
 /*int main(void)
@@ -44,4 +43,3 @@ void    *ft_memcpy(void *dst, const void *src, size_t n)
    printf("%s\n", src); 
    return (0);
 }*/
-

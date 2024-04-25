@@ -6,7 +6,7 @@
 /*   By: ancuesta <ancuesta@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/18 13:28:34 by ancuesta          #+#    #+#             */
-/*   Updated: 2024/04/23 11:10:05 by ancuesta         ###   ########.fr       */
+/*   Updated: 2024/04/25 13:19:52 by ancuesta         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,8 +19,7 @@ void	*ft_memmove(void *dst, const void *src, size_t len)
 	size_t	counter;
 
 	if (!dst && !src)
-       return (0);
-
+		return (0);
 	counter = 0;
 	if (src < dst)
 	{

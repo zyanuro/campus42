@@ -6,7 +6,7 @@
 /*   By: ancuesta <ancuesta@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/09 12:16:26 by ancuesta          #+#    #+#             */
-/*   Updated: 2024/04/18 12:39:44 by ancuesta         ###   ########.fr       */
+/*   Updated: 2024/04/25 13:08:49 by ancuesta         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,11 +16,8 @@
 
 int	ft_isalnum(int c)
 {
-
 	return (ft_isalpha(c) || ft_isdigit(c));
-
 }
-
 
 /*int main()
 {
