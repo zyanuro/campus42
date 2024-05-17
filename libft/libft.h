@@ -6,7 +6,7 @@
 /*   By: ancuesta <ancuesta@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/25 13:27:35 by ancuesta          #+#    #+#             */
-/*   Updated: 2024/05/17 18:39:32 by ancuesta         ###   ########.fr       */
+/*   Updated: 2024/05/17 18:49:13 by ancuesta         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -40,7 +40,7 @@ char    *ft_strdup (const char *s1);
 char    *ft_substr(char const *s, unsigned int start, size_t len);
 char    *ft_strjoin(char const *s1, char const *s2);
 void    ft_putchar_fd(char c, int fd);
-//char    *ft_strtrim(char const *s1, char const *set);
+char    *ft_strtrim(char const *s1, char const *set);
 void    ft_putstr_fd(char *s, int fd);
 void    ft_putendl_fd(char *s, int fd);
 void    ft_putnbr_fd(int n, int fd);
